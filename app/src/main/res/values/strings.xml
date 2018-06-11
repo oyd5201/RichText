@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RicheditorTest</string>
+    <array name="color_items">
+        <item>红</item>
+        <item>黄</item>
+        <item>蓝</item>
+        <item>绿</item>
+        <item>黑</item>
+    </array>
+    <array name="text_back_color_items">
+        <item>红</item>
+        <item>黄</item>
+        <item>蓝</item>
+        <item>绿</item>
+        <item>黑</item>
+        <item>透明</item>
+    </array>
+</resources>

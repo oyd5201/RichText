@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/sanJiao_card"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:background="@drawable/shape_item"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ly_red"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:gravity="center"
+                android:src="@drawable/shape_cirle_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_orange"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:gravity="center"
+                android:src="@drawable/shape_cirle_orange" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_yellow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:gravity="center"
+                android:src="@drawable/shape_cirle_yellow" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly_violet"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+        <ImageView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:gravity="center"
+            android:src="@drawable/shape_cirle_violet" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly_blue"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:gravity="center"
+                android:src="@drawable/shape_cirle_blue" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly_black"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:gravity="center"
+                android:src="@drawable/shape_cirle_black" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ly_white"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:gravity="center"
+                android:src="@drawable/shape_cirle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.example.richeditortest.view.SanJiaoView
+        android:id="@+id/sanjiaoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:sjv_color="@color/bgColor"
+        app:sjv_direction="bottom"
+        app:sjv_resolutionHeight="10dp"
+        app:sjv_resolutionWidth="10dp" />
+
+</LinearLayout>

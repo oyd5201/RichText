@@ -1,4 +1,4 @@
-# MyProject
+# MyRichText
 我的富文本编辑module
 =========
 我写的这个module是对richeditor-android进行了封装，把常用的集成进来，并对页面布局进行了优化，

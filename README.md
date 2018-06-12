@@ -9,7 +9,7 @@
 --
 
 如果功能觉得不够多里面MainActivity里面的类集成了更多，我现在只是隐藏了，需要更多富文本请看源码
-把AndroidManifest.xml文件里的启动类改成MainActivity,现在启动类是MainTestActivity
+把AndroidManifest.xml文件里的启动类改成MainActivity,现在启动类是MainActivityTest
 --
 
 

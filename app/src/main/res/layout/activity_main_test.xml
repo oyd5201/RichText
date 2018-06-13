@@ -112,6 +112,15 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_mark" />
         </LinearLayout>
+             <ImageButton
+            android:id="@+id/action_undo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/undo_select"
+            android:contentDescription="@null" />
     </LinearLayout>
 
     <HorizontalScrollView
@@ -127,7 +136,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/action_undo"
+                android:id="@+id/action_undo1"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center_vertical"

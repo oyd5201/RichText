@@ -545,37 +545,38 @@ public class MainActivityTest extends AppCompatActivity {
         }
     }
 
-    private void getImage() {
+      private void getImage() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             startActivityForResult(new Intent(Intent.ACTION_GET_CONTENT).setType("image/*"),
                     REQUEST_PICK_IMAGE);
         } else {
-            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
-            intent.addCategory(Intent.CATEGORY_OPENABLE);
+//            Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
+//            intent.addCategory(Intent.CATEGORY_OPENABLE);
+//            intent.setType("image/*");
+//            startActivityForResult(intent, REQUEST_PICK_IMAGE);
+            /*打开相册*/
+            Intent intent = new Intent();
+            intent.setAction(Intent.ACTION_PICK);
             intent.setType("image/*");
-            startActivityForResult(intent, REQUEST_PICK_IMAGE);
+            startActivityForResult(intent, 10);
         }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == Activity.RESULT_OK) {
-            switch (requestCode) {
-                case REQUEST_PICK_IMAGE:
-                    if (data != null) {
-                        String realPathFromUri = RealPathFromUriUtils.getRealPathFromUri(this, data.getData());
-                        mEditor.insertImage("https://unsplash.it/2000/2000?random&58",
-                                "huangxiaoguo\" style=\"max-width:100%");
-                        mEditor.insertImage(realPathFromUri, realPathFromUri + "\" style=\"max-width:100%");
+        if (requestCode == 10 && resultCode == RESULT_OK) {
+            if (data != null) {
+                String realPathFromUri = RealPathFromUriUtils.getRealPathFromUri(this, data.getData());
+//                mEditor.insertImage("https://unsplash.it/2000/2000?random&58",
+//                        "huangxiaoguo\" style=\"max-width:100%");
+                mEditor.insertImage(realPathFromUri, realPathFromUri + "\" style=\"max-width:100%");
 //                        mEditor.insertImage(realPathFromUri, realPathFromUri + "\" style=\"max-width:100%;max-height:100%");
 
-                    } else {
-                        Toast.makeText(this, "图片损坏，请重新选择", Toast.LENGTH_SHORT).show();
-                    }
-
-                    break;
+            } else {
+                Toast.makeText(this, "图片损坏，请重新选择", Toast.LENGTH_SHORT).show();
             }
+
         }
     }
 

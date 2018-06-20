@@ -12,6 +12,25 @@
 把AndroidManifest.xml文件里的启动类改成MainActivity,现在启动类是MainActivityTest
 --
 
+The module I wrote was encapsulation of richeditor-android, bringing in common integration and optimizing page layout.
+
+You need to download the project directly and import it.
+
+The content of the integration is as follows
+
+
+
+Font thickening, font underline, italic, font color modification, font size change, and inserting pictures, generating HTML, combining WebView, and with reference function.
+
+-
+
+
+
+If the function doesn't feel enough, the class in MainActivity is integrated more. I'm just hiding now. I need more rich text. Please look at the source code.
+
+Change the startup class in the AndroidManifest.xml file to MainActivity, and now the startup class is MainActivityTest.
+
+-
 
 
 demo图片如下

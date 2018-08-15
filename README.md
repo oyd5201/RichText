@@ -12,6 +12,15 @@
 把AndroidManifest.xml文件里的启动类改成MainActivity,现在启动类是MainActivityTest
 --
 
+注意事项
+==
+这个webview编辑器由于需要获取焦点，比如改变字体颜色啥的，还有字体变粗，而我用的popwindow也是要获取焦点的，然而这不是重点，
+--
+重点是唤醒的键盘也是会获取焦点，而且优先级高于前面两者，所以当键盘隐藏的时候是编辑器里面的有些功能就失效了，所以就得在AndroidManifest.xml
+--
+里面加属性让键盘不主动隐藏
+--
+
 The module I wrote was encapsulation of richeditor-android, bringing in common integration and optimizing page layout.
 
 You need to download the project directly and import it.

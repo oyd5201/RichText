@@ -35,14 +35,21 @@ Font thickening, font underline, italic, font color modification, font size chan
 
 -
 
-
-
 If the function doesn't feel enough, the class in MainActivity is integrated more. I'm just hiding now. I need more rich text. Please look at the source code.
 
 Change the startup class in the AndroidManifest.xml file to MainActivity, and now the startup class is MainActivityTest.
 
 -
 
+The point is that the wake-up keyboard also gets the focus, and the priority is higher than the previous two, so when the keyboard is hidden, some of the functions in the editor fail, so it has to be in Android Manifest. xml.
+
+-
+
+Add attributes inside so that the keyboard does not take the initiative to hide.
+
+-
+
+If you feel satisfied, can you leave your little heart?
 
 demo图片如下
 

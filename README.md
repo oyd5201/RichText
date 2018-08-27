@@ -20,6 +20,8 @@
 --
 里面加属性让键盘不主动隐藏
 --
+觉得满意的话，可否留下你们的小心心^_^
+--
 
 The module I wrote was encapsulation of richeditor-android, bringing in common integration and optimizing page layout.
 
